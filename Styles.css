@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body {
+    width: 100%;
+    background-color: #dddddd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: black;
+    margin: 0; 
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: #dddddd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 15px; 
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#header-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px; 
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    padding: 0 15px; 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+a:active {
+    color: rgb(255, 78, 196);
+}
+
+#hero-section{
+    width: 60%;
+    margin: 150px auto 0;
+}
+
+main {
+    width: 50%;
+    margin: 80px auto 0; 
+    text-align: justify;
+}
+
+h2 {
+
+    font-size: 2.1rem;
+    margin-left: 18%;
+    font-weight: 400;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+#Safety > h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+#Safety{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#email{
+    display: block;
+    margin: auto;
+    text-align: start;
+    padding-left: 5px;
+    padding-right: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border:  1px solid #312e2ec7;
+    margin-bottom: 15px;
+   
+
+}
+
+#submit, .add-chart{
+    display: block;
+    margin: auto;
+    border-radius: 2px;
+    padding: 7px;
+    background-color: blue;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.add-chart{
+    margin-bottom: 10px;
+}
+
+h3{
+    margin-bottom: 0;
+    
+}
+
+#Energy  h3{
+    color: blue;
+    margin-bottom: 10px;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 50px;
+    line-height: 2vw;
+}
+
+#Price{
+    width: 70%;
+    margin-top: 40px;
+    margin-left: 20%;
+    margin-bottom: 4%;
+}
+
+#Price > p{
+    margin: 0;
+    padding: 0;
+    line-height: 2vw;
+    text-align: center;
+}
+.price{
+    width: auto;
+    height: auto;
+    margin-right: 30px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 30px;
+    display: inline-block;
+    justify-content: center;
+    gap: 50px;
+    border: 1px solid #312e2ec7;
+}
+
+.price > .product-name{
+    font-weight: 600;
+    text-align: center;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+ 
+}
+
+.price > .amount{
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+
+.price ul{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.price > .add-chart{
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 30%;
+}
+ul > li{
+    list-style: none;
+    line-height: 2vw;
+    text-align: center;
+}
+footer {
+    width: 63%;
+    margin-left: 20%;
+    margin-top: 30px;
+    background-color: rgb(211, 211, 211);
+    padding: 10px;
+  }
+  
+  footer > ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  footer > ul > li {
+    padding: 0 10px;
+  }
+  
+  footer > p {
+    margin-top: 5px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+    color: #312e2ec7;
+  }
+
+  @media (max-width: 768px) {
+    #hero-section {
+        width: 80%;
+        margin-top: 100px;
+    }
+
+    main {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-left: 10%;
+        margin-top: 80px;
+    }
+
+    #Price {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .price {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+}
+  
