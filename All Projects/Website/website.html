@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="title">Building Automation System</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>BYOHAS Document</header>
+            <ul>
+        <li><a href="#Introduction" class="nav-link" >Introduction</a></li>
+        <li><a href="#Components" class="nav-link">Components</a></li>
+        <li><a href="#Planning_your_System" class="nav-link">Planning your System</a></li>
+        <li><a href="#Installation_and_Setup" class="nav-link">Installation and Setup</a></li>
+        <li><a href="#Programming_and_Customization" class="nav-link">Programming and Customization</a></li>
+        <li><a href="#Troubleshooting_and_Maintenance" class="nav-link">Troubleshooting and Maintenance</a></li>
+        <li><a href="#Advanced_Topics" class="nav-link">Advanced Topics</a></li>
+        <li><a href="#Others" class="nav-link">Others</a></li>
+        <li><a href="#Reference" class="nav-link">Reference</a></li>
+            </ul>
+        </nav>
+      
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <p><span class="bold">Introduction To Building Your Own Home Automation System:</span> Home automation has revolutionized modern living, integrating 
+                    electronic devices and systems to streamline tasks and enhance comfort. From 
+                    controlling lights to managing security, automation offers unprecedented convenience 
+                    and efficiency.</p>
+                
+                <p><span class="bold">Benefits:</span> Home automation simplifies daily life, providing remote access and control
+                     via smartphones or voice 
+                    commands. It promotes energy efficiency through optimized utilities and enhances safety with real-time 
+                    monitoring and alerts</p>
+
+                <p><span class="bold">Customization and Accessibility:</span> Automation is flexible, allowing customization to suit
+                     individual preferences 
+                    and lifestyles. Intuitive 
+                    interfaces, such as voice control and mobile apps, ensure accessibility for users of all ages and abilities.</p>
+
+                <p><span class="bold">Future Outlook:</span> As technology advances, home automation will become more sophisticate
+                     and seamlessly integrated into our lives.
+                     With ongoing innovation in AI and IoT, the possibilities for enhancing home automation's impact on our daily
+                      routines
+                      are limitless</p>
+
+                <p>In the realm of home automation, the future holds boundless potential. As technology continues to advance,
+                 we can anticipate a seamless integration of sophisticated systems into our daily lives. With the ongoing evolution
+                 of artificial intelligence (AI) and the Internet of Things (IoT), the horizon for home automation's impact on our
+                 routines expands exponentially. From personalized comfort settings to intelligent energy management, the trajectory
+                 of home automation promises to revolutionize how we interact with our living spaces, ushering in an era of unprecedented
+                 convenience and efficiency.</p>
+
+                <p>The convergence of AI and IoT not only enhances the convenience of home automation but also fosters a
+                 safer and more sustainable living environment. With AI-driven security systems capable of proactive threat 
+                detection and response, homeowners can enjoy peace of mind like never before. Moreover, IoT-enabled energy 
+                management solutions empower users to optimize resource utilization, reducing waste and lowering carbon footprints. 
+                As these technologies mature and become more accessible, the democratization of smart home capabilities will further 
+                catalyze societal shifts towards eco-conscious living and enhanced quality of life.</p>
+            </section>
+            <section class="main-section" id="Components">
+                <header>Components</header>
+                <ul>
+                    <li><span class="bold">Sensors:</span> Sensors are fundamental components of a home automation system, serving to detect changes in the
+                         environment or user behavior. These can include motion sensors, temperature sensors, light sensors, and more.
+                          Sensors gather data that inform the system's actions, such as adjusting lighting based on occupancy or 
+                          regulating temperature according to ambient conditions.</li>
+                    <l1><span class="bold">ctuators:</span> Actuators are devices responsible for executing actions based on input received from sensors or commands from the user.
+                        Common examples include motors for opening and closing curtains or blinds, relays for switching lights on and off, and solenoid 
+                        valves for controlling water flow. Actuators translate electronic signals into physical movements or changes in the environment.</l1>
+                    <li><span class="bold">Controllers:</span> Controllers serve as the brains of the home automation system, coordinating the operation of sensors, actuators, and other components.
+                         These can range from simple microcontrollers or single-board computers to dedicated home automation hubs or smart home assistants. 
+                         Controllers process sensor data, execute predefined routines or user commands, and facilitate communication between devices.</li>
+                    <li><span class="bold">Communication Protocols:</span> Communication protocols define the rules and standards governing how different components of the home automation system interact and exchange data.
+                     These protocols can operate over various mediums, including wired connections like Ethernet or powerline communication, as well as wireless technologies such as Wi-Fi, Bluetooth,
+                      Zigbee, or Z-Wave. Choosing the right communication protocol is crucial for ensuring compatibility and reliability within the home automation ecosystem.</li>
+                    <li><span class="bold">Power Management Devices:</span> Power management devices play a crucial role in optimizing energy consumption and ensuring the uninterrupted operation of home automation 
+                        components. These devices encompass power strips with built-in surge protection and energy monitoring capabilities, as well as 
+                        smart outlets or switches that enable remote control and scheduling of connected appliances. By integrating power management devices 
+                        into the ecosystem, users can mitigate energy wastage, reduce utility costs, and enhance the sustainability of their smart homes.</li>
+                </ul>
+            </section>
+
+            <section class="main-section" id="Planning_your_System">
+                <header>Planning your System</header>
+                <p><span class="bold">Assessing Needs:</span> Begin by assessing your needs and objectives for home automation. Identify areas where automation could enhance convenience,
+                 comfort, security, and energy efficiency in your home. Consider factors such as daily routines, lifestyle preferences, and any specific challenges
+                 or requirements you may have. For example, you might prioritize automating lighting and climate control for energy savings, or focus on security
+                 and surveillance for peace of mind.</p>
+                <p><span class="bold">Choosing Appropriate Devices:</span> Once you've identified your needs, research and select appropriate devices and components to fulfill those requirements.
+                 Consider factors such as compatibility, functionality, reliability, and scalability when choosing devices.
+                  Look for products from reputable manufacturers that support interoperable standards and communication protocols
+                   to ensure seamless integration within your home automation ecosystem. Common devices include smart thermostats,
+                    lighting controls, security cameras, door locks, and smart plugs, among others.</p>
+                <p><span class="bold">Creating a Layout:</span> With your needs and devices in mind, create a layout or plan for your home automation system. Map out the locations where devices will be 
+                installed and consider factors such as wiring, power sources, and connectivity options. Determine the optimal placement of sensors, actuators, and controllers to
+             maximize effectiveness and coverage throughout your home. Take into account the layout and architecture of your home, as well as any existing infrastructure or systems
+              that may impact installation and integration.</p>
+
+                <p><span class="bold">Integration and Testing:</span> Once you have a plan in place, proceed with the installation and integration of your chosen devices and components. Follow manufacturer 
+                instructions and best practices for setup, configuration, and connectivity. Test each device and system to ensure proper functionality and compatibility, and make any 
+                necessary adjustments or optimizations as needed. Consider conducting a trial period to evaluate the performance of your home automation setup in real-world scenarios and 
+                 fine-tune settings to meet your preferences and requirements.</p>
+
+                 <p><span class="bold">Post-Integration Optimization and Maintenance:</span>
+
+                    As your home automation system transitions from blueprint to reality, the journey towards optimal performance is far from over.
+                 Embrace a proactive stance towards optimization and maintenance to ensure sustained efficiency and reliability. Regularly assess 
+                 the efficacy of your setup, soliciting feedback from household members to identify areas for improvement. Keep abreast of firmware 
+                 updates and technological advancements, leveraging them to unlock new features and functionalities within your ecosystem. 
+                 Cultivate a culture of vigilance, promptly addressing any anomalies or malfunctions to prevent cascading disruptions. 
+                 By treating optimization and maintenance as integral pillars of your home automation journey, you safeguard the longevity 
+                 and vitality of your smart home ecosystem, empowering it to evolve in tandem with your ever-changing needs and aspirations.</p>
+            </section>
+
+            <section class="main-section" id="Installation_and_Setup">
+                <header>Installation and Setup</header>
+                <ol>
+                    <li><span class="bold">Prepare the Environment:</span>
+                        <ul>
+                            <li>Before installation, ensure that the environment is conducive to setting up the home automation system. This includes having a stable power supply,
+                             sufficient Wi-Fi coverage, and accessible areas for device placement.</li>
+                        </ul>
+                    </li>
+                    <li><span class="bold">Unbox and Organize Components:</span>
+                        <ul>
+                            <li>Begin by unboxing all the hardware components of your home automation system, 
+                            including sensors, actuators, controllers, and any additional accessories.</li>
+                            <li>Organize the components according to their intended locations and functionalities 
+                            to streamline the installation process.</li>
+                        </ul>
+                    </li>
+                    <li><span class="bold">Install Sensors and Actuators:</span>
+                    <ul>
+                        <li>Place sensors in strategic locations throughout your home,
+                         such as near doors, windows, or in rooms where automation is desired.</li>
+                        <li>Mount actuators in appropriate locations to control devices such as lights,
+                         thermostats, or blinds. Ensure they are securely fastened and positioned for optimal performance.</li>
+                    </ul>
+                    </li>
+                    <li><span class="bold">Connect Controllers and Hubs:</span>
+                    <ul>
+                        <li>Install and connect the main controller or hub of your home automation system to your home network.
+                         This may involve connecting via Ethernet or configuring Wi-Fi connectivity.</li>
+                        <li>Follow the manufacturer's instructions to power on and initialize the controller, 
+                        ensuring it is properly connected to the internet and ready for device integration.</li>
+                    </ul>
+                    </li>
+                    <li><span class="bold">Pair Devices with the Controller:</span>
+                    <ul>
+                        <li>Using the controller's interface or accompanying mobile app,
+                         initiate the pairing process to connect each sensor and actuator to the controller.</li>
+                        <li>Follow the specific pairing instructions for each device, which may involve pressing
+                         buttons or scanning QR codes to establish communication.</li>
+                    </ul>
+                    </li>
+                    <li><span class="bold">Configure Device Settings:</span>
+                    <ul>
+                        <li>Once paired, access the settings and configuration
+                         options for each device through the controller's interface or app.</li>
+                        <li>Customize device settings according to your preferences, 
+                        such as naming devices, setting schedules, adjusting sensitivity levels,
+                     or creating automation rules.</li>
+                    </ul>
+                    </li>
+                    <li><span class="bold">Test System Functionality:</span>
+                    <ul>
+                        <li>After configuring all devices, perform comprehensive
+                         testing to ensure proper functionality and integration within the home automation system.</li>
+                        <li>Test individual devices to verify sensor accuracy, actuator responsiveness, and controller communication</li>
+                        <li>Execute automation routines or scenarios to confirm that devices interact as intended and
+                         automation triggers function correctly.</li>
+                    </ul>
+                    </li>
+                    <li><span class="bold">Troubleshooting and Optimization:</span>
+                    <ul>
+                        <li>If any issues arise during testing, troubleshoot potential causes such as connectivity 
+                        issues, signal interference, or device compatibility.</li>
+                        <li>Make necessary adjustments or optimizations to device placement, configuration settings,
+                         or network settings to resolve issues and improve system performance.</li>
+                    </ul>
+                    </li>
+                    <li><span class="bold">Finalize Setup and Documentation:</span>
+                    <ul>
+                        <li>Once all devices are installed and configured, finalize the setup by documenting the layout,
+                         settings, and automation routines of your home automation system.</li>
+                        <li>Keep a record of device manuals, warranty information, and any troubleshooting steps for future reference.</li>
+                    </ul>
+                    </li>
+                </ol>
+            </section>
+            <section class="main-section" id="Programming_and_Customization">
+                <header>Programming and Customization</header>
+                <p>Programming and customization are integral aspects of maximizing the functionality
+                 and personalization of a home automation system. Through programming, users can define
+                  specific tasks and conditions that trigger automated actions within their environment.
+                 This may involve setting up routines to turn lights on or off at designated times,
+                 adjust thermostat settings based on temperature thresholds, or even automate
+                  the operation of appliances and entertainment systems. Most home automation systems 
+                  provide intuitive interfaces or mobile apps that allow users to create and manage
+                   these automation routines with ease, often utilizing drag-and-drop functionality or
+                    simple rule-based configurations.</p>
+                
+                <p>Moreover, customization empowers users to tailor their home automation setup to suit their
+                 unique preferences and lifestyle requirements. This can include adjusting device settings,
+                 creating personalized scenes or modes for different scenarios, and integrating disparate
+                 devices or services to work harmoniously together. For example, users may want to synchronize 
+                 their smart lighting with their alarm system, so lights automatically flash in the event of an
+                  intrusion. Similarly, integrating voice assistants like Amazon Alexa or Google Assistant 
+                enables hands-free control of smart devices, enhancing convenience and accessibility within the home.</p>
+
+                <p>Furthermore, advanced users may explore more sophisticated programming options beyond the basic
+                 rule-based systems provided by mainstream home automation platforms. This could involve delving 
+                 into scripting languages like JavaScript or Python to create custom automation scripts or
+                 employing open-source automation frameworks like Home Assistant or OpenHAB for greater
+                 flexibility and control. These advanced customization options enable users to implement
+                 complex automation logic, integrate with a wider range of devices and services, and tailor
+                 their home automation experience to meet specific requirements or preferences.</p>
+
+                <p>In conclusion, programming and customization are key pillars of home automation
+                 that empower users to create personalized, intelligent environments tailored to
+                 their needs and preferences. By leveraging automation rules, personalized scenes,
+                 and advanced programming techniques, users can automate routine tasks, integrate diverse devices
+                 and services, and enhance overall comfort, convenience, and efficiency within their homes.
+                 Whether through intuitive interfaces provided by mainstream platforms or through more advanced
+                 customization options offered by open-source solutions, home automation enables users to unlock the
+                 full potential of their smart home ecosystem.</p>
+            </section>
+
+            <section class="main-section"id="Troubleshooting_and_Maintenance">
+                <header>Troubleshooting and Maintenance</header>
+                <ol>
+                    <li><span class="bold">Troubleshooting Tips:</span>
+                    <ul>
+                        <li>Check Power and Connectivity: Verify that all devices are properly 
+                        powered and connected to the network. Ensure power sources are functioning,
+                        cables are securely plugged in, and Wi-Fi signals are strong and stable.</li>
+
+                        <li>Restart Devices and Controller: Try restarting devices and the main controller
+                         or hub to resolve temporary glitches or connectivity issues. Power cycling can often
+                         clear up software bugs or network conflicts.</li>
+
+                        <li>Review Device Settings: Double-check device settings and configurations to ensure 
+                        they are correctly set up according to manufacturer recommendations.
+                        Look for any discrepancies or conflicting settings that may be causing issues.</li>
+
+                        <li>Update Firmware and Software: Regularly update firmware and software for all devices
+                         and the home automation controller to ensure compatibility, security, and optimal performance. 
+                         Check for updates through the manufacturer's website or app and apply them as needed.</li>
+
+                        <li>Inspect Physical Components: Inspect physical components for signs of damage, wear,
+                         or malfunction. Replace any faulty sensors, actuators, or controllers, and ensure that 
+                         devices are installed correctly and securely mounted.</li>
+
+                        <li>Monitor Network Traffic: Use network monitoring tools or built-in diagnostics in the home 
+                        automation system to track network traffic and identify any abnormal behavior or congestion
+                         that may be impacting performance.</li>
+
+                        <li>Reset Devices to Factory Defaults: As a last resort, consider resetting devices to their
+                             factory defaults to troubleshoot persistent issues. This will clear all custom
+                             settings and configurations, so be sure to back up any important data or configurations
+                             beforehand.</li>
+                    </ul>
+                    </li>
+                    <li><span class="bold">Maintenance Guidance:</span>
+                    <ul>
+                        <li>Regular Inspection and Cleaning: Perform regular inspections of devices and 
+                        clean them as needed to prevent dust buildup or debris accumulation that can affect 
+                        performance. Follow manufacturer guidelines for cleaning and maintenance.</li>
+
+                        <li>Update Security Measures: Stay vigilant about security threats and update security 
+                        measures such as passwords, encryption protocols, and access controls to protect against
+                     unauthorized access or cyber attacks.</li>
+
+                        <li>Test Backup Systems: If applicable, test backup power systems such as batteries or 
+                        generators to ensure they are functioning properly in case of power outages or emergencies.</li>
+
+                        <li>Monitor Device Lifespan: Keep track of the lifespan of devices and components within the home 
+                        automation system, and proactively replace aging or obsolete equipment to maintain reliability 
+                        and compatibility.</li>
+
+                        <li>Educate Users: Provide users with guidance and training on how to use the home automation
+                         system effectively and troubleshoot common issues. Encourage users to report any issues
+                          promptly for timely resolution.</li>
+                    </ul>
+                    </li>
+                </ol>
+                <div class="explain">By following these troubleshooting tips and maintenance guidelines,
+                 you can ensure your home automation system operates smoothly and reliably.</div>
+            </section>
+            <section class="main-section" id="Advanced_Topics">
+                <header>Advanced Topics</header>
+
+                <p><span class="bold">Integrating Voice Control:</span> Voice control adds a new dimension of 
+                convenience and accessibility to home automation systems. Integrating voice assistants such 
+                as Amazon Alexa, Google Assistant, or Apple HomeKit allows users to control smart devices
+             using natural language commands. This enables hands-free operation of lights, thermostats, 
+             entertainment systems, and more, enhancing usability for users with mobility issues or busy 
+             lifestyles. Advanced integration techniques may involve creating custom voice commands, 
+             implementing natural language processing (NLP) capabilities, or integrating with third-party
+              voice recognition services for improved accuracy and responsiveness.</p>
+
+                <p><span class="bold">Implementing Security Measures:</span> Security is a critical consideration in
+                 home automation, especially as more devices become interconnected and accessible over the internet.
+                 Implementing robust security measures helps safeguard against unauthorized access, data breaches, 
+                 and cyber attacks. This may include securing network connections with encryption protocols such as 
+                 WPA2 or WPA3, using strong passwords and two-factor authentication (2FA), and regularly updating 
+                 firmware and software to patch vulnerabilities. Advanced security features may also involve implementing 
+                 intrusion detection systems (IDS), firewalls, or security monitoring services to detect and respond to 
+                 potential threats in real-time.</p>
+
+                <p><span class="bold">Expanding the System with Additional Features:</span> As users become more
+                 comfortable with their home automation systems, they may seek to expand functionality and add new
+                 features to further enhance their living environment. This could involve integrating additional smart
+                 devices such as smart appliances, environmental sensors, or home entertainment systems to extend automation
+                 capabilities. Advanced users may explore integrating custom or DIY devices using open-source platforms like
+                 Arduino or Raspberry Pi, enabling endless possibilities for creativity and innovation. Furthermore,
+                 integrating with smart home ecosystems or platforms like IFTTT (If This, Then That) allows users to create
+                 complex automation sequences and trigger actions based on a wide range of events and conditions, 
+                unlocking limitless customization and automation potential.</p>
+            </section>
+            <section class="main-section" id="Others">
+                <header>Others</header>
+                <P>You can search online for more instruction you might need.
+                </P>
+                <ol>
+                    <li><span class="bold">Code for Controlling Smart Lights (Python using Home Assistant):</span><br>
+                        <div class="code">
+                        <code># Import the necessary modules<br>
+                            from homeassistant.const import STATE_ON, STATE_OFF<br>
+                            import homeassistant.turn_on, homeassistant.turn_off<br>
+                            
+                            # Define a function to control smart lights<br>
+                            def control_lights(entity_id, action):<br>
+                                if action == 'on':<br>
+                                    homeassistant.turn_on(entity_id)<br>
+                                    print("Lights turned on.")<br>
+                                elif action == 'off':<br>
+                                    homeassistant.turn_off(entity_id)<br>
+                                    print("Lights turned off.")<br>
+                                else:<br>
+                                    print("Invalid action.")<br>
+                            
+                            <span class="bold"># Example usage</span><br>
+                           control_lights('light.living_room', 'on')</code><br>
+                        </div>
+                    </li>
+                    <li><span class="bold">Code for Reading Temperature Data from a Sensor (Arduino using DHT11 sensor):</span>
+                        <div class="code">
+                        <code>#include <DHT.h><br>
+
+                            #define DHTPIN 2<br>
+                            #define DHTTYPE DHT11<br>
+                            
+                            DHT dht(DHTPIN, DHTTYPE);<br>
+                            
+                            void setup() {<br>
+                              Serial.begin(9600);<br>
+                              dht.begin();<br>
+                            }<br>
+                            
+                            void loop() {<br>
+                              delay(2000);<br>
+                              float temperature = dht.readTemperature();<br>
+                              Serial.print("Temperature: ");<br>
+                              Serial.print(temperature);<br>
+                              Serial.println(" °C");<br>
+                            }
+                        </div>
+                        </code>
+                    </li>
+                    <li><span class="bold s-code">Code for Sending Push Notifications (Node.js using Pushover):</span>
+                        <div class="code">
+                        <code>const Push = require('pushover-notifications');<br>
+
+                            // Set up Pushover client<br>
+                            const pushover = new Push({<br>
+                              user: 'your_user_key',<br>
+                              token: 'your_app_token'<br>
+                            });<br>
+                            
+                            // Define a function to send push notifications<br>
+                            function sendNotification(message) {<br>
+                              const msg = {<br>
+                                message: message<br>,
+                                title: 'Home Automation Alert',<br>
+                                sound: 'bike',<br>
+                                priority: 1<br>
+                              };<br>
+                            
+                              pushover.send(msg, function(err, result) {<br>
+                                if (err) throw err;<br>
+                                console.log(result);<br>
+                              });<br>
+                            }<br>
+                                                   
+                           <span class="bold"> // Example usage</span><br>
+                            sendNotification("Motion detected in the backyard.");<br>
+                        </div>
+                        </code>
+                    </li>
+
+                    <li><span class="bold">Code for Controlling a Smart Thermostat (Java using OpenHAB):</span>
+                        <div class="code">
+                        <code>import org.openhab.core.library.types.OnOffType;<br>
+                            import org.openhab.core.library.types.DecimalType;<br>
+                            import org.openhab.core.items.Item;<br>
+                            import org.openhab.core.items.GenericItem;<br>
+                            import org.openhab.core.items.NumberItem;<br>
+                            import org.openhab.core.library.items.SwitchItem;<br>
+                            import org.openhab.core.library.items.NumberItem;<br>
+                            
+                            public class ThermostatControl {<br>
+                                // Simulated thermostat<br>
+                                SwitchItem heating = new SwitchItem("Heating");<br>
+                                NumberItem temperature = new NumberItem("Temperature");<br>
+                            
+                                // Method to control thermostat<br>
+                                public void controlThermostat(double targetTemperature) {<br>
+                                    temperature.postUpdate(new DecimalType(targetTemperature));<br>
+                                    if (targetTemperature > 20) {<br>
+                                        heating.sendCommand(OnOffType.ON);<br>
+                                        System.out.println("Heating turned on.");<br>
+                                    } else {<br>
+                                        heating.sendCommand(OnOffType.OFF);<br>
+                                        System.out.println("Heating turned off.");<br>
+                                    }<br>
+                                }<br>
+                                                            <span class="bold">// Example usage</span>
+                                public static void main(String[] args) {<br>
+                                    ThermostatControl control = new ThermostatControl();<br>
+                                    control.controlThermostat(22.5);<br>
+                                }<br>
+                            }
+                        </div>
+                        </code>
+                    </li>
+
+                    <li><span class="bold">Code for Implementing a Custom Home Automation Rule (JavaScript using Homebridge):</span>
+                        <div class="code">
+                        <code>const request = require('request');<br>
+
+                            // Define a function to trigger an action based on a condition<br>
+                            function customAutomationRule() {<br>
+                                // Replace URL with your custom endpoint<br>
+                                const url = 'http://yourserver.com/custom-automation-endpoint';<br>
+                            
+                                // Send a GET request to the endpoint<br>
+                                request.get(url, function(error, response, body) {<br>
+                                    if (!error && response.statusCode == 200) {<br>
+                                        const data = JSON.parse(body);<br>
+                                        if (data.condition) {<br>
+                                            // Trigger action<br>
+                                            console.log("Custom automation rule triggered.");<br>
+                                        }<br>
+                                    }<br>
+                                });<br>
+                            }<br>
+                                                 
+                            <span class="bold">// Example usage</span><br>
+                            customAutomationRule();</code>
+                        </div>
+                    </li>
+                </ol> 
+            </section>
+            <section class="main-section" id="Reference">
+                <header>Reference</header>
+                <p>All the documentation in this page is taken from <a href="https://chatgpt.com/?oai-dm=1">Chatgpt</a></p>
+            </section>
+        </main>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var mainSections = document.querySelectorAll('.main-section');
+                mainSections.forEach(function(section) {
+                    var headerText = section.querySelector('h1').textContent;
+                    var id = headerText.trim().replace(/\s+/g, '_').toLowerCase();
+                    section.id = id;
+                });
+            });
+        </script>
+    </body>
+</html>

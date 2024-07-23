@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="Survey.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey form</title>
+    </head>
+    <body>
+        <h1 id="title" >Survey Form</h1>
+        <p id="description" >Thanks for participation on our program! please fill these fields</p>
+        <form id="survey-form" action="/survey-form" method="post">
+<fieldset>
+    <label for="first-name" id="name-label" >Enter your first name: <input type="text" id="name" name="first-name" placeholder="first name" required/></label>
+    <label for="middle-name" id="name-label" >Enter your middle name: <input type="text" id="name" name="middle-name" placeholder="middle name" required/></label>
+    <label for="last-name" id="name-label">Enter your last name: <input type="text" id="name" name="last-name" placeholder="last-name" required/></label>
+    <label for="email" id="email-label" >Enter your email:  <input id="email" type="email" name="email" placeholder="email address" required/></label>
+    <label for="age" id="number-label" >Enter your age: <input type="number" id="number" name="age" min="1" max="60" placeholder="age" required/></label>
+    <label for="gender">Select your gender
+        <select>
+            <option value="">Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">prefer not to say</option>
+        </select>
+    </label>
+    <label for="dropdown" >Are you satisfied with joining our program?
+        <select id="dropdown" >
+            <option value="yes" >Yes</option>
+            <option value="no" >No</option>
+        </select>
+    </label>
+</fieldset>
+<fieldset>
+    <label for="Description">Which option describe your current role
+        <select id="Description">
+            <option value="front-end">Front-end</option>
+            <option value="Back-end">Back-end</option>
+            <option value="full-stack">Full-stack</option>
+            <option value="data-analysis">Data analysis</option>
+            <option value="Ai-learning">AI learning</option>
+            <option value="other">Other</option>
+        </select>
+    </label>
+    <label for="recommendation">Would you recommend us to a friend?</label>
+    <label for="definitely"><input id="definitely" type="radio" name="recommendation" value="definitely" /> Definitely</label>
+    <label for="maybe"><input id="maybe" type="radio" name="recommendation" value="maybe" /> Maybe</label>
+    <label for="not sure"><input id="notsure" type="radio" name="recommendation" value="notsure" /> Not sure</label>
+</fieldset>
+<fieldset>
+    <label for="improved">What would you like to see improved?</label>
+    <label for="data-analysis"><input id="data-analysis" type="checkbox" name="data-analysis" value="data-analysis" /> Data Analysis</label>
+    <label for="font-end"><input id="font-end" type="checkbox" name="font-end" value="font-end" /> Font-end</label>
+    <label for="back-end"><input id="back-end" type="checkbox" name="back-end" value="back-end" /> Back-end</label>
+    <label for="challenges"><input id="challenges" type="checkbox" name="challenges" value="challenges" /> Challenges</label>
+    <label for="Ai-learning"><input id="Ai-learning" type="checkbox" name="Ai-learning" value="Ai-learning" /> AI Learning</label>
+    <label for="full-stack"><input id="full-stack" type="checkbox" name="full-stack" value="full-stack" /> Full-stack</label>
+    <label for="e-learning"><input id="e-learning" type="checkbox" name="e-learning" value="e-learning" /> E-Learning</label>
+    <label for="software-engineering"><input id="software-engineering" type="checkbox" name="software-engineering" value="software-engineering" /> Software Engineering</label>
+    <label for="mobile-app"><input id="mobile-app" type="checkbox" name="mobile-app" value="mobile-app" /> Mobile App</label>
+    <label for="software-testing"><input id="software-testing" type="checkbox" name="software-testing" value="software-testing" /> Software Testing</label>
+    <label for="other-courses"><input id="other-courses" type="checkbox" name="other-courses" value="other-course" /> Other Courses</label>
+</fieldset>
+<label for="comment"><span class="comment"> Any Comments? </span></label>
+<textarea id="comment" name="comment" rows="4" cols="50" placeholder="comment" required></textarea>
+<button id="submit" type="submit"/>Submit</button>
+        </form>
+       
+    </body>
+</html>

@@ -1,0 +1,82 @@
+body{
+    width: 40%;
+    height: 60vh;
+    margin: auto;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-family: outfit;
+    font-size: 16px;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 270%;
+    background-image: url(https://www.shutterstock.com/image-photo/elearning-education-internet-technology-webinar-260nw-1139995139.jpg);
+    filter: blur(7px);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    z-index: -1; 
+}
+label{
+    display: block;
+    padding: 8px;
+    color: rgb(255,255,255);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgb(200, 255, 255);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+form{
+    background-color: rgb(12, 115, 146);
+    color: rgb(0,0,0);
+    margin-bottom: 20px;
+    margin: 50px auto;
+}
+h1,p{
+    text-align: center;
+    font-family: outfit;
+    margin-bottom: 0;
+    font-style: Bold;
+}
+.bold{
+    font-weight: 900;
+}
+button[type="Submit"]{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 13px;
+    width: 95%;
+}
+textarea{
+    margin-bottom: 25px;
+    margin-left: 10px;
+    border-radius: 4px;
+    width: 95%;
+    
+}
+
+.comment{
+    color:rgb(200, 255, 255);
+}
+
+fieldset{
+    border: none;
+}
