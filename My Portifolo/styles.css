@@ -1,0 +1,181 @@
+body{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(16, 2, 66);
+    color: rgb(255, 255, 255);
+ 
+}
+main{
+    margin-bottom: 60px;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(16, 2, 66);
+    padding: 10px 15px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(128, 104, 216, 0.1);
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 100%;
+    cursor: pointer;
+}
+
+nav > ul > li {
+    padding: 20px 25px;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:hover{
+    color: pink;
+}
+
+a:active{
+    color: purple;
+}
+h1, h2{
+    margin-top: 15%;
+    margin-left: 40%;
+    font-size: 2rem;
+    color: #fe6730;;
+
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width: 100%;
+    max-width: 1280px;
+    gap: 1.5rem;
+    margin: 0px auto 0px;
+    margin-bottom: 0;
+}
+#project{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 0px;
+}
+#projects h2, #design h2{
+    margin-left: 38%;
+    font-size: 1.5rem;
+}
+#design h2{
+    margin-bottom: 50px;
+    text-decoration: underline #fe6730;
+}
+.com-name{
+    text-transform: uppercase;
+    color: #c56948
+    
+}
+p{
+    font-size: 1rem;
+    margin: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    line-height: 2vw;
+}
+
+h4{
+    margin-top: 0%;
+    color:#c56948;
+}
+
+#contact h2, .skill h2, .experience h2{
+    margin-top: 10%;
+    font-size: 1.5rem;
+    margin-left: 43%;
+}
+#name{ 
+    padding: 10px 5px;
+    padding-right: 7%;
+    margin-left: 27.5%;
+    margin-right: 10px;
+    margin-bottom: 20px
+    
+    
+}
+#email{
+    padding: 10px 5px;
+    padding-right: 10.5%;
+    margin-bottom: 20px;
+}
+textarea{
+    display: block;
+    margin: auto;
+}
+
+button{
+    background-color: #c56948;
+    color: #000;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: 43%;
+    padding: 10px 80px;
+}
+
+.last-skill{
+    margin-bottom: 0%;
+}
+/*
+#project-title{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 15px;
+  margin-top: 0%; 
+  padding: 0%; 
+}*/
+
+.view-all:hover{
+    background-color: rgb(202, 125, 138)
+}
+.view-all:active{
+background-color: rgb(163, 55, 163);
+}
+.view-all{
+ padding: 10px 20px;  
+ color: pink; 
+ margin-left: 48%;
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    background-color: #00000091;
+}
+footer p{
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 0.6rem;
+}
+.contact{
+    color:#c56948;
+    text-align: center;
+}
+
+.address{
+    color:#c56948;
+}
+
+footer a{
+    color:#c56948;
+    text-decoration: underline;
+}
